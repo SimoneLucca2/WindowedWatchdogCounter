@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog_TB_isim_par.exe" -prj "/home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog_TB_par.prj" "work.watchdog_TB" 

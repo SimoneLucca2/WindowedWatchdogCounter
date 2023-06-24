@@ -1,0 +1,148 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml time_comparator.twx time_comparator.ncd -o
+time_comparator.twr time_comparator.pcf
+
+Design file:              time_comparator.ncd
+Physical constraint file: time_comparator.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+MAX_count<0>   |eq_max         |   10.335|
+MAX_count<1>   |eq_max         |   10.074|
+MAX_count<2>   |eq_max         |   10.385|
+MAX_count<3>   |eq_max         |   10.312|
+MAX_count<4>   |eq_max         |   10.943|
+MAX_count<5>   |eq_max         |   10.144|
+MAX_count<6>   |eq_max         |   10.998|
+MAX_count<7>   |eq_max         |   10.837|
+MAX_count<8>   |eq_max         |   10.875|
+MAX_count<9>   |eq_max         |   11.121|
+MAX_count<10>  |eq_max         |   10.833|
+MAX_count<11>  |eq_max         |   11.423|
+MAX_count<12>  |eq_max         |   10.838|
+MAX_count<13>  |eq_max         |   10.855|
+MAX_count<14>  |eq_max         |   10.583|
+MAX_count<15>  |eq_max         |   11.449|
+MIN_count<0>   |eq_min         |   10.386|
+MIN_count<1>   |eq_min         |   10.008|
+MIN_count<2>   |eq_min         |   10.501|
+MIN_count<3>   |eq_min         |   10.658|
+MIN_count<4>   |eq_min         |   10.171|
+MIN_count<5>   |eq_min         |    9.521|
+MIN_count<6>   |eq_min         |    8.852|
+MIN_count<7>   |eq_min         |    8.991|
+MIN_count<8>   |eq_min         |    9.502|
+MIN_count<9>   |eq_min         |    8.966|
+MIN_count<10>  |eq_min         |    9.066|
+MIN_count<11>  |eq_min         |    8.689|
+MIN_count<12>  |eq_min         |    9.285|
+MIN_count<13>  |eq_min         |    9.088|
+MIN_count<14>  |eq_min         |    8.927|
+MIN_count<15>  |eq_min         |    9.056|
+NMI_count<0>   |eq_nmi         |   10.466|
+NMI_count<1>   |eq_nmi         |   10.859|
+NMI_count<2>   |eq_nmi         |   10.350|
+NMI_count<3>   |eq_nmi         |   10.107|
+NMI_count<4>   |eq_nmi         |   10.933|
+NMI_count<5>   |eq_nmi         |   11.275|
+NMI_count<6>   |eq_nmi         |   10.859|
+NMI_count<7>   |eq_nmi         |   10.885|
+NMI_count<8>   |eq_nmi         |   11.424|
+NMI_count<9>   |eq_nmi         |   11.601|
+NMI_count<10>  |eq_nmi         |   10.940|
+NMI_count<11>  |eq_nmi         |   10.435|
+NMI_count<12>  |eq_nmi         |   11.256|
+NMI_count<13>  |eq_nmi         |   10.818|
+NMI_count<14>  |eq_nmi         |   10.862|
+NMI_count<15>  |eq_nmi         |   10.048|
+count<0>       |eq_max         |   12.012|
+count<0>       |eq_min         |   11.154|
+count<0>       |eq_nmi         |   11.470|
+count<1>       |eq_max         |   11.534|
+count<1>       |eq_min         |   10.803|
+count<1>       |eq_nmi         |   11.522|
+count<2>       |eq_max         |   11.451|
+count<2>       |eq_min         |   10.995|
+count<2>       |eq_nmi         |   10.903|
+count<3>       |eq_max         |   10.927|
+count<3>       |eq_min         |   10.877|
+count<3>       |eq_nmi         |   10.974|
+count<4>       |eq_max         |   11.186|
+count<4>       |eq_min         |   11.020|
+count<4>       |eq_nmi         |   11.776|
+count<5>       |eq_max         |   10.992|
+count<5>       |eq_min         |   11.440|
+count<5>       |eq_nmi         |   11.764|
+count<6>       |eq_max         |   11.052|
+count<6>       |eq_min         |   10.430|
+count<6>       |eq_nmi         |   10.904|
+count<7>       |eq_max         |   11.015|
+count<7>       |eq_min         |   10.715|
+count<7>       |eq_nmi         |   11.466|
+count<8>       |eq_max         |    9.986|
+count<8>       |eq_min         |    9.925|
+count<8>       |eq_nmi         |   10.092|
+count<9>       |eq_max         |    9.755|
+count<9>       |eq_min         |    9.931|
+count<9>       |eq_nmi         |   10.616|
+count<10>      |eq_max         |    9.814|
+count<10>      |eq_min         |    9.592|
+count<10>      |eq_nmi         |    9.858|
+count<11>      |eq_max         |    9.849|
+count<11>      |eq_min         |    9.570|
+count<11>      |eq_nmi         |   10.009|
+count<12>      |eq_max         |    9.664|
+count<12>      |eq_min         |    9.819|
+count<12>      |eq_nmi         |    9.793|
+count<13>      |eq_max         |    9.735|
+count<13>      |eq_min         |   10.235|
+count<13>      |eq_nmi         |   10.159|
+count<14>      |eq_max         |    9.146|
+count<14>      |eq_min         |    9.556|
+count<14>      |eq_nmi         |    8.954|
+count<15>      |eq_max         |    9.304|
+count<15>      |eq_min         |    9.546|
+count<15>      |eq_nmi         |    9.596|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Jun 21 21:22:45 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 363 MB
+
+
+

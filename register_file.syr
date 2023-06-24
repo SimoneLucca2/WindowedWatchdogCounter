@@ -1,0 +1,353 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: register_file.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "register_file.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "register_file"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : register_file
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/reg_PP.vhd" into library work
+Parsing entity <reg_PP>.
+Parsing architecture <RTL> of entity <reg_pp>.
+Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.vhd" into library work
+Parsing entity <register_file>.
+Parsing architecture <RTL> of entity <register_file>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <register_file> (architecture <RTL>) from library <work>.
+
+Elaborating entity <reg_PP> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "/home/simone/OneDrive/Windowed_Watchdog_Counter/reg_PP.vhd" Line 27: clk_enable should be on the sensitivity list of the process
+
+Elaborating entity <reg_PP> (architecture <RTL>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <register_file>.
+    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.vhd".
+    Summary:
+	no macro.
+Unit <register_file> synthesized.
+
+Synthesizing Unit <reg_PP_1>.
+    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/reg_PP.vhd".
+        dimension = 4
+    Found 4-bit register for signal <register_data>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reg_PP_1> synthesized.
+
+Synthesizing Unit <reg_PP_2>.
+    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/reg_PP.vhd".
+        dimension = 16
+    Found 16-bit register for signal <register_data>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <reg_PP_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 16-bit register                                       : 3
+ 4-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <register_file> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block register_file, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : register_file.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4
+#      LUT3                        : 4
+# FlipFlops/Latches                : 52
+#      FDCE                        : 52
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 72
+#      IBUF                        : 20
+#      OBUF                        : 52
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                    4  out of   2400     0%  
+    Number used as Logic:                 4  out of   2400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      4
+   Number with an unused Flip Flop:       4  out of      4   100%  
+   Number with an unused LUT:             0  out of      4     0%  
+   Number of fully used LUT-FF pairs:     0  out of      4     0%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          73
+ Number of bonded IOBs:                  73  out of    102    71%  
+    IOB Flip Flops/Latches:              52
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 52    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.664ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 260 / 156
+-------------------------------------------------------------------------
+Offset:              3.664ns (Levels of Logic = 2)
+  Source:            WrReg (PAD)
+  Destination:       MAX_reg/register_data_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: WrReg to MAX_reg/register_data_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.912  WrReg_IBUF (WrReg_IBUF)
+     LUT3:I0->O           16   0.205   1.004  write_to<1>1 (write_to<1>)
+     FDCE:CE                   0.322          MIN_reg/register_data_0
+    ----------------------------------------
+    Total                      3.664ns (1.749ns logic, 1.915ns route)
+                                       (47.7% logic, 52.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 52 / 52
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            PS_reg/register_data_3 (FF)
+  Destination:       PS_out<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: PS_reg/register_data_3 to PS_out<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.447   0.579  PS_reg/register_data_3 (PS_reg/register_data_3)
+     OBUF:I->O                 2.571          PS_out_3_OBUF (PS_out<3>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.46 secs
+ 
+--> 
+
+
+Total memory usage is 385116 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

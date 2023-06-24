@@ -1,0 +1,2 @@
+vhdl work "latch_d.vhd"
+vhdl work "counter_clrToOne.vhd"

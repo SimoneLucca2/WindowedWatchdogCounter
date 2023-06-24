@@ -1,0 +1,31 @@
+Command line:
+   watchdog_TB_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/WatchDog_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  51233
+
+Fri Jun 23 20:02:09 2023
+
+
+ Elaboration Time: 0.07 sec
+
+ Current Memory Usage: 200.282 Meg
+
+ Total Signals          : 4171
+ Total Nets             : 2730
+ Total Signal Drivers   : 2613
+ Total Blocks           : 838
+ Total Primitive Blocks : 464
+ Total Processes        : 2609
+ Total Traceable Variables  : 5946
+ Total Scalar Nets and Variables : 28974
+Total Line Count : 8158
+
+ Total Simulation Time: 58.48 sec
+
+ Current Memory Usage: 275.857 Meg
+
+Fri Jun 23 20:03:16 2023
+

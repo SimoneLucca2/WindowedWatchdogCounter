@@ -1,0 +1,2 @@
+vhdl work "vector_equals.vhd"
+vhdl work "time_comparator.vhd"

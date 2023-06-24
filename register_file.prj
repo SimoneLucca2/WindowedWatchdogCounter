@@ -1,0 +1,2 @@
+vhdl work "reg_PP.vhd"
+vhdl work "register_file.vhd"

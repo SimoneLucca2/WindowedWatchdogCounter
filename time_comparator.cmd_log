@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/simone/OneDrive/Windowed_Watchdog_Counter/time_comparator.xst" -ofn "/home/simone/OneDrive/Windowed_Watchdog_Counter/time_comparator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 time_comparator.ngc time_comparator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o time_comparator_map.ncd time_comparator.ngd time_comparator.pcf 
+par -w -intstyle ise -ol high -mt off time_comparator_map.ncd time_comparator.ncd time_comparator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml time_comparator.twx time_comparator.ncd -o time_comparator.twr time_comparator.pcf 
+netgen -intstyle ise -s 3  -pcf time_comparator.pcf -rpw 100 -tpw 0 -ar Structure -tm time_comparator -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim time_comparator.ncd time_comparator_timesim.vhd 
+xst -intstyle ise -ifn "/home/simone/OneDrive/Windowed_Watchdog_Counter/time_comparator.xst" -ofn "/home/simone/OneDrive/Windowed_Watchdog_Counter/time_comparator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 time_comparator.ngc time_comparator.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o time_comparator_map.ncd time_comparator.ngd time_comparator.pcf 
+par -w -intstyle ise -ol high -mt off time_comparator_map.ncd time_comparator.ncd time_comparator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml time_comparator.twx time_comparator.ncd -o time_comparator.twr time_comparator.pcf 
+netgen -intstyle ise -s 3  -pcf time_comparator.pcf -rpw 100 -tpw 0 -ar Structure -tm time_comparator -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim time_comparator.ncd time_comparator_timesim.vhd 

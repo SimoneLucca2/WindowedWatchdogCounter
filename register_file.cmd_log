@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.xst" -ofn "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 register_file.ngc register_file.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o register_file_map.ncd register_file.ngd register_file.pcf 
+par -w -intstyle ise -ol high -mt off register_file_map.ncd register_file.ncd register_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml register_file.twx register_file.ncd -o register_file.twr register_file.pcf 
+netgen -intstyle ise -s 3  -pcf register_file.pcf -rpw 100 -tpw 0 -ar Structure -tm register_file -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim register_file.ncd register_file_timesim.vhd 
+xst -intstyle ise -ifn "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.xst" -ofn "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 register_file.ngc register_file.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o register_file_map.ncd register_file.ngd register_file.pcf 
+par -w -intstyle ise -ol high -mt off register_file_map.ncd register_file.ncd register_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml register_file.twx register_file.ncd -o register_file.twr register_file.pcf 
+netgen -intstyle ise -s 3  -pcf register_file.pcf -rpw 100 -tpw 0 -ar Structure -tm register_file -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim register_file.ncd register_file_timesim.vhd 
+xst -intstyle ise -ifn "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.xst" -ofn "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 register_file.ngc register_file.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o register_file_map.ncd register_file.ngd register_file.pcf 
+par -w -intstyle ise -ol high -mt off register_file_map.ncd register_file.ncd register_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml register_file.twx register_file.ncd -o register_file.twr register_file.pcf 
+netgen -intstyle ise -s 3  -pcf register_file.pcf -rpw 100 -tpw 0 -ar Structure -tm register_file -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim register_file.ncd register_file_timesim.vhd 
+xst -intstyle ise -ifn "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.xst" -ofn "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 register_file.ngc register_file.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o register_file_map.ncd register_file.ngd register_file.pcf 
+par -w -intstyle ise -ol high -mt off register_file_map.ncd register_file.ncd register_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml register_file.twx register_file.ncd -o register_file.twr register_file.pcf 
+netgen -intstyle ise -s 3  -pcf register_file.pcf -rpw 100 -tpw 0 -ar Structure -tm register_file -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim register_file.ncd register_file_timesim.vhd 
