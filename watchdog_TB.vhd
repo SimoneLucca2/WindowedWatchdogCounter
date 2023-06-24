@@ -324,7 +324,7 @@ BEGIN
 		
 		--nmi will activate
 		--rst will activate
-		wait for 1s + 5 * clk_period; -- the reset must stay active for 5 clk_periods 
+		wait for 1 sec + 5 * clk_period; -- the reset must stay active for 5 clk_periods 
 		
 		----------- end test reset after threshold ---------
 
