@@ -4,14 +4,14 @@ Command line:
      -sdfmax  /uut/=netgen/par/WatchDog_timesim.sdf
      -sdfroot  /uut
      -simrunnum  0
-     -socket  46345
+     -socket  58995
 
-Sat Jun 24 12:32:50 2023
+Sat Jun 24 14:17:53 2023
 
 
- Elaboration Time: 0.07 sec
+ Elaboration Time: 0.08 sec
 
- Current Memory Usage: 199.983 Meg
+ Current Memory Usage: 199.987 Meg
 
  Total Signals          : 4171
  Total Nets             : 2730
@@ -21,11 +21,11 @@ Sat Jun 24 12:32:50 2023
  Total Processes        : 2609
  Total Traceable Variables  : 5946
  Total Scalar Nets and Variables : 28974
-Total Line Count : 8135
+Total Line Count : 8154
 
- Total Simulation Time: 277.2 sec
+ Total Simulation Time: 0.13 sec
 
  Current Memory Usage: 275.562 Meg
 
-Sat Jun 24 12:37:39 2023
+Sat Jun 24 14:17:55 2023
 

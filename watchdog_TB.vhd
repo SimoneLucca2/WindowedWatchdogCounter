@@ -37,7 +37,7 @@ ARCHITECTURE behavior OF watchdog_TB IS
 	
 
    -- Clock period definitions
-   constant clk_period : time := 100 ns;
+   constant clk_period : time := 15 ns;
  
 BEGIN
  
@@ -286,9 +286,9 @@ BEGIN
 		--#####################################################
 
 		--test if the formulas in the documentation are correct
-		-- given: fck = 50 Mhz, Tmax = 1s
+		-- given: Tck = 15 ns, Tmax = 10 ms
 		-- find the ideal prescaling number and the max threshold to be set
-		-- the results are => prescaling value = 10, max threshold = 1011111010111100
+		-- the results are => prescaling value = 4, max threshold = 1010001010111110
 		
 		-------------- Setup phase ---------------------
 		
@@ -297,12 +297,12 @@ BEGIN
 		rst <= '0';
 	
 		command <= "11";
-		data <= "1011111010111100"; --set the max value to 48828 (value to get 1s)
+		data <= "1010001010111111"; --set the max value to 
 		
 		wait for clk_period;
 		
 		command <= "10";
-		data <= "1011111010111100"; --set the nmi value equal to the reset (don't care) 
+		data <= "1010001010111111"; --set the nmi value equal to the reset (don't care) 
 		
 		wait for clk_period;
 		
@@ -312,7 +312,7 @@ BEGIN
 		wait for clk_period;
 		
 		command <= "00";
-		data <= "00000000000001010"; --the prescaler divides by 2
+		data <= "0000000000000100"; --the prescaler divides by 16
 		
 		-------------- end setup phase ---------------------
 
@@ -322,9 +322,7 @@ BEGIN
 
 		---------- test reset after threshold --------------
 		
-		--nmi will activate
-		--rst will activate
-		wait for 1 sec + 5 * clk_period; -- the reset must stay active for 5 clk_periods 
+		wait for 10 ms + clk_period * 5; -- the reset must activate around 10 ms
 		
 		----------- end test reset after threshold ---------
 

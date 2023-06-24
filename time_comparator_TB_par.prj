@@ -1,0 +1,2 @@
+vhdl work "netgen/par/time_comparator_timesim.vhd"
+vhdl work "time_comparator_TB.vhd"

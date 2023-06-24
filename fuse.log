@@ -1,39 +1,41 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_isim_par.exe -prj /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_par.prj work.watchdog_TB 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_isim_beh.exe -prj /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_beh.prj work.watchdog_TB 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/netgen/par/WatchDog_timesim.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/latch_d.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/vector_equals.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/counter_clrToOne.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/time_comparator.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/register_file.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/prescaler.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/output_reset.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/counter.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog.vhd" into library work
 Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 134436 KB
-Fuse CPU Usage: 2330 ms
+Fuse Memory Usage: 83832 KB
+Fuse CPU Usage: 1200 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package textio
-Compiling package vital_timing
-Compiling package vcomponents
-Compiling package vital_primitives
-Compiling package vpackage
-Compiling architecture x_ckbuf_v of entity X_CKBUF [\X_CKBUF(true,true,"UNPLACED",(0...]
-Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
-Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
-Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
-Compiling architecture x_lut6_v of entity X_LUT6 [\X_LUT6(true,true,"UNPLACED",(0,...]
-Compiling architecture x_lut5_v of entity X_LUT5 [\X_LUT5(true,true,"UNPLACED",(0,...]
-Compiling architecture x_mux2_v of entity X_MUX2 [\X_MUX2(true,true,"UNPLACED",(0,...]
-Compiling architecture x_sff_v of entity X_SFF [\X_SFF(true,true,true,"UNPLACED"...]
-Compiling architecture x_zero_v of entity X_ZERO [\X_ZERO("UNPLACED")(1,8)\]
-Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
-Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
-Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
-Compiling architecture structure of entity WatchDog [watchdog_default]
+Compiling architecture rtl of entity reg_PP [\reg_PP(4)\]
+Compiling architecture rtl of entity reg_PP [\reg_PP(16)\]
+Compiling architecture rtl of entity register_file [register_file_default]
+Compiling architecture rtl of entity latch_d [latch_d_default]
+Compiling architecture rtl of entity counter_clrToOne [counter_clrtoone_default]
+Compiling architecture rtl of entity prescaler [prescaler_default]
+Compiling architecture rtl of entity counter [\counter(16)\]
+Compiling architecture rtl of entity vector_equals [vector_equals_default]
+Compiling architecture rtl of entity time_comparator [time_comparator_default]
+Compiling architecture rtl of entity output_reset [output_reset_default]
+Compiling architecture rtl of entity WatchDog [watchdog_default]
 Compiling architecture behavior of entity watchdog_tb
 Time Resolution for simulation is 1ps.
-Waiting for 4 sub-compilation(s) to finish...
-Compiled 314 VHDL Units
-Built simulation executable /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_isim_par.exe
-Fuse Memory Usage: 716880 KB
-Fuse CPU Usage: 2910 ms
-GCC CPU Usage: 2450 ms
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 25 VHDL Units
+Built simulation executable /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_isim_beh.exe
+Fuse Memory Usage: 649576 KB
+Fuse CPU Usage: 1250 ms
+GCC CPU Usage: 980 ms
