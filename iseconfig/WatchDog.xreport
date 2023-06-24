@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-06-24T11:28:30</DateModified>
+  <DateModified>2023-06-24T12:32:03</DateModified>
   <ModuleName>WatchDog</ModuleName>
   <SummaryTimeStamp>2023-06-21T21:19:19</SummaryTimeStamp>
-  <SavedFilePath>/home/simone/OneDrive/Windowed_Watchdog_Counter/iseconfig/WatchDog.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/simone/OneDrive/Windowed_Watchdog_Counter/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/simone/progetto reti logiche/WindowedWatchdogCounter/iseconfig/WatchDog.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/simone/progetto reti logiche/WindowedWatchdogCounter/</ImplementationReportsDirectory>
   <DateInitialized>2023-06-21T21:22:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

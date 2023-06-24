@@ -1,14 +1,14 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog_TB_isim_par.exe -prj /home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog_TB_par.prj work.watchdog_TB 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_isim_par.exe -prj /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_par.prj work.watchdog_TB 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/netgen/par/WatchDog_timesim.vhd" into library work
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog_TB.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/netgen/par/WatchDog_timesim.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 134432 KB
-Fuse CPU Usage: 2170 ms
+Fuse Memory Usage: 134436 KB
+Fuse CPU Usage: 2330 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package textio
@@ -33,7 +33,7 @@ Compiling architecture behavior of entity watchdog_tb
 Time Resolution for simulation is 1ps.
 Waiting for 4 sub-compilation(s) to finish...
 Compiled 314 VHDL Units
-Built simulation executable /home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog_TB_isim_par.exe
-Fuse Memory Usage: 716896 KB
-Fuse CPU Usage: 2800 ms
-GCC CPU Usage: 2720 ms
+Built simulation executable /home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB_isim_par.exe
+Fuse Memory Usage: 716880 KB
+Fuse CPU Usage: 2910 ms
+GCC CPU Usage: 2450 ms

@@ -268,7 +268,7 @@ BEGIN
 
 		-------- test change register value when not possible  ---------------------
 
-		data <= "0000000000001111" 
+		data <= "0000000000001111";
 		command <= "00"; -- try to change the prescaler value
 
 		-------- end test change register value when not possible  ---------------------

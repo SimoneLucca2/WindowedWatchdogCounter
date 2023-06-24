@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog_TB.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
