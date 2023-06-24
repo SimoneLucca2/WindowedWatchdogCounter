@@ -281,6 +281,54 @@ BEGIN
 		
 		----------- end test reset after threshold ---------
 
+		--#####################################################
+		--############ New Set Up Values  #####################
+		--#####################################################
+
+		--test if the formulas in the documentation are correct
+		-- given: fck = 50 Mhz, Tmax = 1s
+		-- find the ideal prescaling number and the max threshold to be set
+		-- the results are => prescaling value = 10, max threshold = 1011111010111100
+		
+		-------------- Setup phase ---------------------
+		
+		rst <= '1';
+		wait for clk_period;
+		rst <= '0';
+	
+		command <= "11";
+		data <= "1011111010111100"; --set the max value to 48828 (value to get 1s)
+		
+		wait for clk_period;
+		
+		command <= "10";
+		data <= "1011111010111100"; --set the nmi value equal to the reset (don't care) 
+		
+		wait for clk_period;
+		
+		command <= "01";
+		data <= "0000000000000000"; --set the min value to 0 (don't care)
+		
+		wait for clk_period;
+		
+		command <= "00";
+		data <= "00000000000001010"; --the prescaler divides by 2
+		
+		-------------- end setup phase ---------------------
+
+		start <= '1';
+		wait for clk_period; --start the count
+		start <= '0';
+
+		---------- test reset after threshold --------------
+		
+		--nmi will activate
+		--rst will activate
+		wait for 1s + 5 * clk_period; -- the reset must stay active for 5 clk_periods 
+		
+		----------- end test reset after threshold ---------
+
+		start <= '1';
 
       wait;
    end process;
