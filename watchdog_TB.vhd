@@ -84,12 +84,12 @@ BEGIN
 		wait for clk_period;
 		
 		command <= "10";
-		data <= "0000000000001100"; --set the nmi value
+		data <= "0000000000001100"; --set the nmi value to 12
 		
 		wait for clk_period;
 		
 		command <= "01";
-		data <= "0000000000000111"; --set the min value
+		data <= "0000000000000111"; --set the min value to 7
 		
 		wait for clk_period;
 		
@@ -134,7 +134,153 @@ BEGIN
 		wait for clk_period;
 		start <= '0';
 
+		---------- test clr sent in the ideal range  ------------------
+
+		wait for clk_period * 9;
+
+		clr <= '1';
+		wait for clk_period;
+		clr <= '0';
 		
+		---------- end test clr sent in the ideal range  ------------------
+
+
+		--#####################################################
+		--############ New Set Up Values  #####################
+		--#####################################################
+
+		rst <= '1';
+		wait for clk_period;
+		rst <= '0';
+
+		-------------- Setup phase ---------------------
+		
+		wait for clk_period;
+	
+		command <= "11";
+		data <= "0000000000000110"; --set the max value to 6
+		
+		wait for clk_period;
+		
+		command <= "10";
+		data <= "0000000000000100"; --set the nmi value to 4
+		
+		wait for clk_period;
+		
+		command <= "01";
+		data <= "0000000000000010"; --set the min value to 2
+		
+		wait for clk_period;
+		
+		command <= "00";
+		data <= "0000000000000111";--the prescaler divides by 128
+		
+		-------------- end setup phase ---------------------
+
+		start <= '1';
+		wait for clk_period; --start the count
+		start <= '0';
+
+		---------- test reset after threshold --------------
+		
+		--nmi will activate
+		--rst will activate
+		wait for clk_period * (128 * 6 + 5); -- the reset must stay active for 5 clk_periods 
+		
+		----------- end test reset after threshold ---------
+
+		start <= '1';
+		wait for clk_period; --start the count
+		start <= '0';
+
+		----- test clr after nmi but before the max threshold -------
+
+		wait for clk_period * 128 * 5; -- nmi must activate
+
+		clr <= '1';
+		wait for clk_period; -- reset must stay '0'
+		clr <= '0';
+
+		----- end test clr after nmi but before the max threshold -------
+
+
+		---------- test clr sent in the ideal range  ------------------
+
+		wait for clk_period * 128 * 3;
+
+		clr <= '1';
+		wait for clk_period;
+		clr <= '0';
+		
+		---------- end test clr sent in the ideal range  ------------------
+
+
+
+		---------- test reset after clr sent before low threshold --------------
+		
+		wait for clk_period * 30;
+		
+		clr <= '1';
+		wait for clk_period; -- reset will activate
+		clr <= '0';
+		
+		wait for clk_period * 5; -- the reset must stay active for 5*clk_periods
+		
+		---------- end test reset after clr sent before low threshold --------------
+		
+
+		--#####################################################
+		--############ New Set Up Values  #####################
+		--#####################################################
+
+
+		rst <= '1';
+		wait for clk_period;
+		rst <= '0';
+
+		-------------- Setup phase ---------------------
+		
+		wait for clk_period;
+	
+		command <= "11";
+		data <= "0000000000001111"; --set the max value to 15
+		
+		wait for clk_period;
+		
+		command <= "10";
+		data <= "0000000000001100"; --set the nmi value to 12
+		
+		wait for clk_period;
+		
+		command <= "01";
+		data <= "0000000000001000"; --set the min value to 8
+		
+		wait for clk_period;
+		
+		command <= "00";
+		data <= "0000000000000001"; --the prescaler divides by 2
+		
+		-------------- end setup phase ---------------------
+
+		start <= '1';
+		wait for clk_period; --start the count
+		start <= '0';
+
+		-------- test change register value when not possible  ---------------------
+
+		data <= "0000000000001111" 
+		command <= "00"; -- try to change the prescaler value
+
+		-------- end test change register value when not possible  ---------------------
+
+
+		---------- test reset after threshold --------------
+		
+		--if the prescaling value changed (prev test) then the reset cannot be activate 
+		wait for clk_period * (2 * 15 + 5); -- the reset must stay active for 5 clk_periods 
+		
+		----------- end test reset after threshold ---------
+
 
       wait;
    end process;
