@@ -22,10 +22,12 @@ architecture RTL of reg_PP is
 	begin
 		process(clk)
 		begin
-			if rst = '1' then
-				register_data <= (others => '0');
-			elsif clk'event and clk = '1' and clk_enable = '1' then
-				register_data <= data;
+			if clk'event and clk = '1' then
+				if rst = '1' then
+					register_data <= (others => '0');
+				elsif clk_enable = '1' then
+					register_data <= data;
+				end if;
 			end if;
 		end process;
 	
