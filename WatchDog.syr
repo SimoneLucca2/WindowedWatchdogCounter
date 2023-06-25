@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: WatchDog.prj
@@ -148,8 +148,6 @@ Elaborating entity <WatchDog> (architecture <RTL>) from library <work>.
 Elaborating entity <register_file> (architecture <RTL>) from library <work>.
 
 Elaborating entity <reg_PP> (architecture <RTL>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd" Line 25: rst should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd" Line 27: clk_enable should be on the sensitivity list of the process
 
 Elaborating entity <reg_PP> (architecture <RTL>) with generics from library <work>.
 
@@ -158,7 +156,6 @@ Elaborating entity <prescaler> (architecture <RTL>) from library <work>.
 Elaborating entity <counter_clrToOne> (architecture <RTL>) from library <work>.
 
 Elaborating entity <latch_d> (architecture <RTL>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/simone/progetto reti logiche/WindowedWatchdogCounter/latch_d.vhd" Line 19: rst should be on the sensitivity list of the process
 
 Elaborating entity <counter> (architecture <RTL>) with generics from library <work>.
 
@@ -182,7 +179,7 @@ Unit <WatchDog> synthesized.
 Synthesizing Unit <register_file>.
     Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/register_file.vhd".
     Summary:
-	no macro.
+	inferred   4 Multiplexer(s).
 Unit <register_file> synthesized.
 
 Synthesizing Unit <reg_PP_1>.
@@ -234,7 +231,9 @@ Unit <time_comparator> synthesized.
 
 Synthesizing Unit <vector_equals>.
     Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/vector_equals.vhd".
+    Found 16-bit comparator equal for signal <equal> created at line 17
     Summary:
+	inferred   1 Comparator(s).
 Unit <vector_equals> synthesized.
 
 Synthesizing Unit <output_reset>.
@@ -251,10 +250,13 @@ Macro Statistics
  1-bit register                                        : 30
  16-bit register                                       : 3
  4-bit register                                        : 1
-# Multiplexers                                         : 1
+# Comparators                                          : 3
+ 16-bit comparator equal                               : 3
+# Multiplexers                                         : 5
  1-bit 12-to-1 multiplexer                             : 1
-# Xors                                                 : 75
- 1-bit xor2                                            : 75
+ 1-bit 2-to-1 multiplexer                              : 4
+# Xors                                                 : 27
+ 1-bit xor2                                            : 27
 
 =========================================================================
 
@@ -269,10 +271,13 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Registers                                            : 82
  Flip-Flops                                            : 82
-# Multiplexers                                         : 1
+# Comparators                                          : 3
+ 16-bit comparator equal                               : 3
+# Multiplexers                                         : 5
  1-bit 12-to-1 multiplexer                             : 1
-# Xors                                                 : 75
- 1-bit xor2                                            : 75
+ 1-bit 2-to-1 multiplexer                              : 4
+# Xors                                                 : 27
+ 1-bit xor2                                            : 27
 
 =========================================================================
 
@@ -322,17 +327,20 @@ Top Level Output File Name         : WatchDog.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 93
-#      LUT2                        : 6
-#      LUT3                        : 11
-#      LUT4                        : 10
-#      LUT5                        : 12
-#      LUT6                        : 52
+# BELS                             : 116
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 12
+#      LUT3                        : 13
+#      LUT4                        : 8
+#      LUT5                        : 10
+#      LUT6                        : 47
+#      MUXCY                       : 21
 #      MUXF7                       : 2
+#      VCC                         : 1
 # FlipFlops/Latches                : 82
-#      FDC                         : 29
-#      FDCE                        : 52
-#      FDR                         : 1
+#      FDR                         : 30
+#      FDRE                        : 52
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 23
@@ -351,11 +359,11 @@ Slice Logic Utilization:
     Number used as Logic:                91  out of   2400     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    132
-   Number with an unused Flip Flop:      50  out of    132    37%  
-   Number with an unused LUT:            41  out of    132    31%  
-   Number of fully used LUT-FF pairs:    41  out of    132    31%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    140
+   Number with an unused Flip Flop:      58  out of    140    41%  
+   Number with an unused LUT:            49  out of    140    35%  
+   Number of fully used LUT-FF pairs:    33  out of    140    23%  
+   Number of unique control sets:         5
 
 IO Utilization: 
  Number of IOs:                          24
@@ -396,9 +404,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.386ns (Maximum Frequency: 227.975MHz)
+   Minimum period: 3.961ns (Maximum Frequency: 252.487MHz)
    Minimum input arrival time before clock: 4.116ns
-   Maximum output required time after clock: 7.217ns
+   Maximum output required time after clock: 6.646ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -407,28 +415,27 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.386ns (frequency: 227.975MHz)
-  Total number of paths / destination ports: 949 / 82
+  Clock period: 3.961ns (frequency: 252.487MHz)
+  Total number of paths / destination ports: 946 / 82
 -------------------------------------------------------------------------
-Delay:               4.386ns (Levels of Logic = 4)
-  Source:            main_counter/d0/q (FF)
-  Destination:       out_rst/d1/q (FF)
+Delay:               3.961ns (Levels of Logic = 3)
+  Source:            reg_file/PS_reg/register_data_1 (FF)
+  Destination:       prsclr/counter_inst/d0/q (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: main_counter/d0/q to out_rst/d1/q
+  Data Path: reg_file/PS_reg/register_data_1 to prsclr/counter_inst/d0/q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             18   0.447   1.050  main_counter/d0/q (main_counter/d0/q)
-     LUT6:I5->O            1   0.205   0.808  out_rst/delta<1>3 (out_rst/delta<1>3)
-     LUT4:I1->O            1   0.205   0.580  out_rst/delta<1>4 (out_rst/delta<1>4)
-     LUT6:I5->O            1   0.205   0.580  out_rst/delta<1>8 (out_rst/delta<1>8)
-     LUT6:I5->O            1   0.205   0.000  out_rst/delta<1>9 (out_rst/delta<1>)
-     FDC:D                     0.102          out_rst/d1/q
+     FDRE:C->Q             3   0.447   0.995  reg_file/PS_reg/register_data_1 (reg_file/PS_reg/register_data_1)
+     LUT5:I0->O            2   0.203   0.845  PSreg_to_ps<3>_SW1 (N10)
+     LUT6:I3->O           14   0.205   0.958  PSreg_to_ps<3> (count_trigger)
+     LUT2:I1->O            1   0.205   0.000  prsclr/counter_inst/n<0>1 (prsclr/counter_inst/n<0>)
+     FDR:D                     0.102          prsclr/counter_inst/d0/q
     ----------------------------------------
-    Total                      4.386ns (1.369ns logic, 3.017ns route)
-                                       (31.2% logic, 68.8% route)
+    Total                      3.961ns (1.162ns logic, 2.799ns route)
+                                       (29.3% logic, 70.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -443,35 +450,40 @@ Offset:              4.116ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            12   1.222   1.137  clr_IBUF (clr_IBUF)
-     LUT3:I0->O           11   0.205   1.247  count_refresh1 (count_refresh)
+     IBUF:I->O            11   1.222   1.111  clr_IBUF (clr_IBUF)
+     LUT3:I0->O           12   0.205   1.273  count_refresh1 (count_refresh)
      LUT6:I0->O            1   0.203   0.000  main_counter/n<12>1 (main_counter/n<12>)
-     FDC:D                     0.102          main_counter/gen1[12].latch/q
+     FDR:D                     0.102          main_counter/gen1[12].latch/q
     ----------------------------------------
     Total                      4.116ns (1.732ns logic, 2.384ns route)
                                        (42.1% logic, 57.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 40 / 2
+  Total number of paths / destination ports: 36 / 2
 -------------------------------------------------------------------------
-Offset:              7.217ns (Levels of Logic = 4)
-  Source:            main_counter/gen1[5].latch/q (FF)
+Offset:              6.646ns (Levels of Logic = 9)
+  Source:            main_counter/d0/q (FF)
   Destination:       nmi (PAD)
   Source Clock:      clk rising
 
-  Data Path: main_counter/gen1[5].latch/q to nmi
+  Data Path: main_counter/d0/q to nmi
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             13   0.447   1.277  main_counter/gen1[5].latch/q (main_counter/gen1[5].latch/q)
-     LUT6:I1->O            1   0.203   0.808  nmi2 (nmi2)
-     LUT4:I1->O            1   0.205   0.924  nmi4 (nmi4)
-     LUT6:I1->O            1   0.203   0.579  nmi8 (nmi_OBUF)
+     FDR:C->Q             17   0.447   1.372  main_counter/d0/q (main_counter/d0/q)
+     LUT6:I1->O            1   0.203   0.000  cmp/NMI_comparator/Mcompar_equal_lut<0> (cmp/NMI_comparator/Mcompar_equal_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  cmp/NMI_comparator/Mcompar_equal_cy<0> (cmp/NMI_comparator/Mcompar_equal_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  cmp/NMI_comparator/Mcompar_equal_cy<1> (cmp/NMI_comparator/Mcompar_equal_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  cmp/NMI_comparator/Mcompar_equal_cy<2> (cmp/NMI_comparator/Mcompar_equal_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  cmp/NMI_comparator/Mcompar_equal_cy<3> (cmp/NMI_comparator/Mcompar_equal_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  cmp/NMI_comparator/Mcompar_equal_cy<4> (cmp/NMI_comparator/Mcompar_equal_cy<4>)
+     MUXCY:CI->O           1   0.213   0.808  cmp/NMI_comparator/Mcompar_equal_cy<5> (nmi_output)
+     LUT3:I0->O            1   0.205   0.579  nmi1 (nmi_OBUF)
      OBUF:I->O                 2.571          nmi_OBUF (nmi)
     ----------------------------------------
-    Total                      7.217ns (3.629ns logic, 3.588ns route)
-                                       (50.3% logic, 49.7% route)
+    Total                      6.646ns (3.887ns logic, 2.759ns route)
+                                       (58.5% logic, 41.5% route)
 
 =========================================================================
 
@@ -483,21 +495,21 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.386|         |         |         |
+clk            |    3.961|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.49 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.30 secs
  
 --> 
 
 
-Total memory usage is 385964 kilobytes
+Total memory usage is 385888 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

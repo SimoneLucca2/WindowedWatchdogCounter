@@ -1,2 +1,0 @@
-vhdl work "netgen/par/WatchDog_timesim.vhd"
-vhdl work "watchdog_TB.vhd"

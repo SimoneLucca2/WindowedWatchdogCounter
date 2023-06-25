@@ -67,12 +67,12 @@ BEGIN
    stim_proc: process
    begin		
 
-	   rst <= '1';
-		wait for clk_period;
-		rst <= '0';
-		
 		start <= '0';
 		clr   <= '0';
+	   rst <= '1';
+		wait for clk_period*10;
+		rst <= '0';
+		
 		
 		-------------- Setup phase ---------------------
 		
@@ -142,6 +142,8 @@ BEGIN
 		wait for clk_period;
 		clr <= '0';
 		
+		wait for clk_period*5;
+		
 		---------- end test clr sent in the ideal range  ------------------
 
 
@@ -150,7 +152,7 @@ BEGIN
 		--#####################################################
 
 		rst <= '1';
-		wait for clk_period;
+		wait for clk_period*10;
 		rst <= '0';
 
 		-------------- Setup phase ---------------------
@@ -235,7 +237,7 @@ BEGIN
 
 
 		rst <= '1';
-		wait for clk_period;
+		wait for clk_period*10;
 		rst <= '0';
 
 		-------------- Setup phase ---------------------
@@ -293,7 +295,7 @@ BEGIN
 		-------------- Setup phase ---------------------
 		
 		rst <= '1';
-		wait for clk_period;
+		wait for clk_period*10;
 		rst <= '0';
 	
 		command <= "11";

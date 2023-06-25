@@ -16,7 +16,7 @@ begin
 
 	process(clk)
 	begin
-		if clk'event and clk = '1' then
+		if clk'event and clk = '1'  then
 			if rst = '1' then
 				q <= '0';
 			else

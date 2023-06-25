@@ -31,17 +31,9 @@ architecture RTL of register_file is
 		);
 	end component;
 
-	 
-	signal selector : std_logic_vector(3 downto 0); -- one hot vector that selects the register to write to
-   signal write_to : std_logic_vector(3 downto 0); -- selector vector if WrReg = '1', "0000" otherwise
-	signal resized_data : std_logic_vector(3 downto 0);
+   signal write_to : std_logic_vector(3 downto 0); -- can the register in that position be written to
 
 begin
-
-	--the data vector is 16 bits, that is incompatible with the PS_reg that requires only 4 bits
-	resize: for i in 0 to 3 generate
-		resized_data(i) <= data(i);
-		end generate;
 
 	PS_reg : reg_PP
 		generic map(
@@ -51,7 +43,7 @@ begin
 			clk => clk,
 			rst => rst,
 			clk_enable => write_to(0),
-			data => resized_data,
+			data => data(3 downto 0),
 			q => PS_out
 		);
 
@@ -92,26 +84,10 @@ begin
 		);
 
 
-    with command select
-        selector(0) <=
-           '1' when "00",
-           '0' when others;
-    with command select
-        selector(1) <=
-           '1' when "01",
-           '0' when others;
-    with command select
-        selector(2) <=
-           '1' when "10",
-           '0' when others;
-    with command select
-        selector(3) <=
-           '1' when "11",
-           '0' when others;
+    write_to(0) <= WrReg when command = "00" else '0';
+	 write_to(1) <= WrReg when command = "01" else '0';
+	 write_to(2) <= WrReg when command = "10" else '0';
+	 write_to(3) <= WrReg when command = "11" else '0';
 
-	-- the register must be written to only if the WrReg is '1'
-    wr: for i in 0 to 3 generate
-        write_to(i) <= (selector(i) and WrReg);
-        end generate;
 
 end RTL;

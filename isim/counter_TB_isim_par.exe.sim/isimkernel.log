@@ -3,15 +3,15 @@ Command line:
      -simmode  gui
      -sdfmax  /uut/=netgen/par/counter_timesim.sdf
      -sdfroot  /uut
-     -simrunnum  0
-     -socket  40599
+     -simrunnum  1
+     -socket  55795
 
-Sun Jun 25 09:27:01 2023
+Sun Jun 25 21:52:07 2023
 
 
- Elaboration Time: 0.04 sec
+ Elaboration Time: 0.03 sec
 
- Current Memory Usage: 188.092 Meg
+ Current Memory Usage: 187.998 Meg
 
  Total Signals          : 1066
  Total Nets             : 691
@@ -23,9 +23,9 @@ Sun Jun 25 09:27:01 2023
  Total Scalar Nets and Variables : 11394
 Total Line Count : 2016
 
- Total Simulation Time: 0.06 sec
+ Total Simulation Time: 0.05 sec
 
- Current Memory Usage: 263.668 Meg
+ Current Memory Usage: 263.574 Meg
 
-Sun Jun 25 09:28:19 2023
+Sun Jun 25 21:52:24 2023
 

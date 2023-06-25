@@ -5,14 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd" Line 25: <arg fmt="%s" index="1">rst</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd" Line 27: <arg fmt="%s" index="1">clk_enable</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/simone/progetto reti logiche/WindowedWatchdogCounter/latch_d.vhd" Line 19: <arg fmt="%s" index="1">rst</arg> should be on the sensitivity list of the process
-</msg>
-
 </messages>
 

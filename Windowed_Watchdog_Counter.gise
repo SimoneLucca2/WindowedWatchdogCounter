@@ -227,6 +227,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="register_file.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="register_file_TB_isim_beh.exe"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="register_file_TB_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="register_file_TB_isim_par.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_file_TB_par.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="register_file_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="register_file_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="register_file_map.map" xil_pn:subbranch="Map"/>
@@ -269,8 +271,6 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="watchdog_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="watchdog_TB_isim_beh.wdb"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="watchdog_TB_isim_par.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="watchdog_TB_isim_par.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="watchdog_TB_par.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="watchdog_TB_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
@@ -402,9 +402,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1687677975" xil_pn:in_ck="-8860449280963636035" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8200841364698716171" xil_pn:start_ts="1687677966">
+    <transform xil_pn:end_ts="1687721993" xil_pn:in_ck="-8860449280963636035" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8200841364698716171" xil_pn:start_ts="1687721986">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -430,7 +429,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1687677981" xil_pn:in_ck="-5126074107350448642" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1355158647868685155" xil_pn:start_ts="1687677975">
+    <transform xil_pn:end_ts="1687721998" xil_pn:in_ck="-5126074107350448642" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1355158647868685155" xil_pn:start_ts="1687721993">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="WatchDog.bld"/>
@@ -439,7 +438,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1687677994" xil_pn:in_ck="-8179284286880965179" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1687677981">
+    <transform xil_pn:end_ts="1687722007" xil_pn:in_ck="-8179284286880965179" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1687721998">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="WatchDog.pcf"/>
@@ -452,7 +451,7 @@
       <outfile xil_pn:name="WatchDog_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1687678008" xil_pn:in_ck="2557220017558150548" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="417176447551133118" xil_pn:start_ts="1687677994">
+    <transform xil_pn:end_ts="1687722018" xil_pn:in_ck="2557220017558150548" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="417176447551133118" xil_pn:start_ts="1687722007">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="WatchDog.ncd"/>
@@ -466,7 +465,7 @@
       <outfile xil_pn:name="WatchDog_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1687678015" xil_pn:in_ck="7462833863246633769" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="-1740402236668582429" xil_pn:start_ts="1687678008">
+    <transform xil_pn:end_ts="1687722024" xil_pn:in_ck="7462833863246633769" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="-1740402236668582429" xil_pn:start_ts="1687722018">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="netgen"/>
@@ -474,7 +473,7 @@
       <outfile xil_pn:name="netgen/par/WatchDog_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/WatchDog_timesim.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1687678699" xil_pn:in_ck="-935573067892701990" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1687678699">
+    <transform xil_pn:end_ts="1687722722" xil_pn:in_ck="-935573067892701990" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1687722722">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="counter_TB.vhd"/>
@@ -499,28 +498,24 @@
       <outfile xil_pn:name="time_comparator_TB.vhd"/>
       <outfile xil_pn:name="watchdog_TB.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1687678703" xil_pn:in_ck="-521538466738653718" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="-3499644528512291976" xil_pn:start_ts="1687678699">
+    <transform xil_pn:end_ts="1687722753" xil_pn:in_ck="-521538466738653718" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="2032914226610138590" xil_pn:start_ts="1687722749">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="watchdog_TB_isim_par.exe"/>
-      <outfile xil_pn:name="watchdog_TB_par.prj"/>
+      <outfile xil_pn:name="register_file_TB_isim_par.exe"/>
+      <outfile xil_pn:name="register_file_TB_par.prj"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1687678703" xil_pn:in_ck="-8559027815599839076" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-5183314268816509475" xil_pn:start_ts="1687678703">
+    <transform xil_pn:end_ts="1687722753" xil_pn:in_ck="-8559027815599839076" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="8027006267879468150" xil_pn:start_ts="1687722753">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="watchdog_TB_isim_par.wdb"/>
+      <outfile xil_pn:name="register_file_TB_isim_par.wdb"/>
     </transform>
-    <transform xil_pn:end_ts="1687678008" xil_pn:in_ck="7462833863246633769" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1687678002">
+    <transform xil_pn:end_ts="1687722018" xil_pn:in_ck="7462833863246633769" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1687722013">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="WatchDog.twr"/>

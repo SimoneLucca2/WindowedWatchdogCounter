@@ -1,0 +1,2 @@
+vhdl work "netgen/par/register_file_timesim.vhd"
+vhdl work "register_file_TB.vhd"

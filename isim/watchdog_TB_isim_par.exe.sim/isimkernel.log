@@ -3,29 +3,29 @@ Command line:
      -simmode  gui
      -sdfmax  /uut/=netgen/par/WatchDog_timesim.sdf
      -sdfroot  /uut
-     -simrunnum  0
-     -socket  33425
+     -simrunnum  1
+     -socket  48769
 
-Sun Jun 25 09:38:26 2023
+Sun Jun 25 21:45:11 2023
 
 
- Elaboration Time: 0.07 sec
+ Elaboration Time: 0.09 sec
 
- Current Memory Usage: 200.016 Meg
+ Current Memory Usage: 203.682 Meg
 
- Total Signals          : 4171
- Total Nets             : 2730
- Total Signal Drivers   : 2613
- Total Blocks           : 838
- Total Primitive Blocks : 464
- Total Processes        : 2609
- Total Traceable Variables  : 5946
- Total Scalar Nets and Variables : 28973
-Total Line Count : 8154
+ Total Signals          : 5192
+ Total Nets             : 3589
+ Total Signal Drivers   : 3262
+ Total Blocks           : 927
+ Total Primitive Blocks : 528
+ Total Processes        : 3252
+ Total Traceable Variables  : 7077
+ Total Scalar Nets and Variables : 33075
+Total Line Count : 8516
 
- Total Simulation Time: 0.23 sec
+ Total Simulation Time: 317.06 sec
 
- Current Memory Usage: 275.595 Meg
+ Current Memory Usage: 279.257 Meg
 
-Sun Jun 25 09:38:44 2023
+Sun Jun 25 21:50:40 2023
 

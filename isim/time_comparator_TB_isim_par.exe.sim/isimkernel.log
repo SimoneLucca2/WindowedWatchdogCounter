@@ -4,9 +4,9 @@ Command line:
      -sdfmax  /uut/=netgen/par/time_comparator_timesim.sdf
      -sdfroot  /uut
      -simrunnum  0
-     -socket  44879
+     -socket  41693
 
-Sun Jun 25 09:34:28 2023
+Sun Jun 25 20:25:14 2023
 
 
  Elaboration Time: 0.04 sec
@@ -21,11 +21,11 @@ Sun Jun 25 09:34:28 2023
  Total Processes        : 443
  Total Traceable Variables  : 1262
  Total Scalar Nets and Variables : 10261
-Total Line Count : 2129
+Total Line Count : 2128
 
- Total Simulation Time: 1.1 sec
+ Total Simulation Time: 0.05 sec
 
- Current Memory Usage: 263.688 Meg
+ Current Memory Usage: 263.684 Meg
 
-Sun Jun 25 09:36:08 2023
+Sun Jun 25 20:25:35 2023
 
