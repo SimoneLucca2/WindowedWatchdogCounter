@@ -47,10 +47,10 @@ begin
     );
 
     delta(0) <=  (out_q(1)  or  ((not clr)  and (eq_min))  or  ( (not clr) and  (out_q(0)))  or  ( (not out_q(0)) and clr and eq_min)) and 
-						(not (out_q(1) and out_q(0) and start ) ); 
+						(not (out_q(1) and out_q(0) and start ) ); -- look at documentation
 
     delta(1) <= ( ( ((not out_q(0)) and (not out_q(1)) and clr and (not eq_min) )  or  (out_q(1)) ) and (not (out_q(1) and  out_q(0) and start)) ) 
-            or ((not out_q(1)) and out_q(0) and eq_max) ;
+            or ((not out_q(1)) and out_q(0) and eq_max) ; -- look at documentation
 	
 	 reset <= out_q(1);
 

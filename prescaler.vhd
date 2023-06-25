@@ -49,7 +49,7 @@ architecture RTL of Prescaler is
               count(7) when "0111",
               count(8) when "1000",
               count(9) when "1001",
-              count(10) when others;
+              count(10) when others; -- if s > 10 => s = 10
 	
 	
 	 clk_enable_out <= clk_enable_s;

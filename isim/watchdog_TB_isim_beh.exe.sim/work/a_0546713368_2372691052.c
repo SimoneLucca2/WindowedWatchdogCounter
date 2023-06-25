@@ -108,6 +108,7 @@ static void work_a_0546713368_2372691052_p_1(char *t0)
     int t11;
     int t12;
     int64 t13;
+    int64 t14;
 
 LAB0:    t1 = (t0 + 3672U);
     t2 = *((char **)t1);
@@ -1308,10 +1309,15 @@ LAB172:    xsi_set_current_line(321, ng0);
     t6 = *((char **)t5);
     *((unsigned char *)t6) = (unsigned char)2;
     xsi_driver_first_trans_fast(t2);
-    xsi_set_current_line(327, ng0);
+    xsi_set_current_line(325, ng0);
     t7 = (10 * 1000000000LL);
+    t2 = (t0 + 2448U);
+    t3 = *((char **)t2);
+    t10 = *((int64 *)t3);
+    t13 = (t10 * 5);
+    t14 = (t7 + t13);
     t2 = (t0 + 3480);
-    xsi_process_wait(t2, t7);
+    xsi_process_wait(t2, t14);
 
 LAB178:    *((char **)t1) = &&LAB179;
     goto LAB1;
@@ -1320,7 +1326,7 @@ LAB173:    goto LAB172;
 
 LAB175:    goto LAB173;
 
-LAB176:    xsi_set_current_line(331, ng0);
+LAB176:    xsi_set_current_line(329, ng0);
     t2 = (t0 + 4184);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
@@ -1328,7 +1334,7 @@ LAB176:    xsi_set_current_line(331, ng0);
     t6 = *((char **)t5);
     *((unsigned char *)t6) = (unsigned char)3;
     xsi_driver_first_trans_fast(t2);
-    xsi_set_current_line(333, ng0);
+    xsi_set_current_line(331, ng0);
 
 LAB182:    *((char **)t1) = &&LAB183;
     goto LAB1;

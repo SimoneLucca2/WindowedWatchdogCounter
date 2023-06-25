@@ -67,9 +67,6 @@ BEGIN
 		NMI_count <= "0000000100001000";
 		MAX_count <= "0000000110001000";
 
-		wait for 1 ns;
-		
-		
       wait;
    end process;
 

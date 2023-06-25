@@ -4,13 +4,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity WatchDog is
 	Port (  
-			clk  : in std_logic;
-			clr  : in std_logic;
+			clk : in std_logic;
+			clr : in std_logic;
 			rst : in std_logic;
 			command : in std_logic_vector(1 downto 0);
 			start: in std_logic;
 			data : in std_logic_vector(15 downto 0);
-			reset  : out std_logic;
+			reset: out std_logic;
 			nmi  : out std_logic
 			  );
 end WatchDog;
@@ -35,7 +35,7 @@ architecture RTL of WatchDog is
 	component Prescaler
 		port ( 
 			  clk : in std_logic;
-           s : in std_logic_vector(3 downto 0); -- selector of mux
+           s : in std_logic_vector(3 downto 0); -- selector
 			  rst : in std_logic;
 			  clk_enable_out : out std_logic
 			  );
@@ -82,9 +82,9 @@ architecture RTL of WatchDog is
 	signal MINreg_to_cmp : std_logic_vector(15 downto 0);
 	signal NMIreg_to_cmp : std_logic_vector(15 downto 0);
 	signal MAXreg_to_cmp : std_logic_vector(15 downto 0);
-	signal eq : std_logic_vector(1 downto 0);
+	signal eq : std_logic_vector(1 downto 0); --buffer for eq_min (0) and eq_max (1)
 	
-	signal count_refresh : std_logic;
+	signal count_refresh : std_logic; -- buffer for clr
 	signal continue_count : std_logic;
 	signal started : std_logic;
 	signal notStarted : std_logic;
@@ -155,7 +155,7 @@ begin
 		 );
 		 
 		 
-	process(clk)
+	process(clk) -- set the "started" signal
 	begin
 		if clk'event and clk = '1' then
 			if rst = '1' then
@@ -166,9 +166,10 @@ begin
 		end if;
 	end process;
 	
-	count_refresh <= notstarted or clr or start;
-	notstarted <= not started;
-	nmi <= nmi_output and started and (not rst);
+	count_refresh <= notstarted or clr or start; -- cases in which the counter must clr
+	nmi <= nmi_output and started and (not reset_output); -- the nmi goes to 0 if the reset is 1
 	reset <= reset_output and started;
-			
+	
+	notstarted <= not started;		
+		
 end RTL;

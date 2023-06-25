@@ -2,9 +2,9 @@ Command line:
    watchdog_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  57027
+     -socket  37061
 
-Sat Jun 24 15:04:36 2023
+Sun Jun 25 09:12:58 2023
 
 
  Elaboration Time: 0.02 sec
@@ -21,9 +21,9 @@ Sat Jun 24 15:04:36 2023
  Total Scalar Nets and Variables : 759
 Total Line Count : 312
 
- Total Simulation Time: 8.18 sec
+ Total Simulation Time: 24.45 sec
 
  Current Memory Usage: 260.227 Meg
 
-Sat Jun 24 15:06:00 2023
+Sun Jun 25 09:13:28 2023
 

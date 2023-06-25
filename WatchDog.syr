@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: WatchDog.prj
@@ -108,34 +108,34 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/latch_d.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/latch_d.vhd" into library work
 Parsing entity <latch_d>.
 Parsing architecture <RTL> of entity <latch_d>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/vector_equals.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/vector_equals.vhd" into library work
 Parsing entity <vector_equals>.
 Parsing architecture <RTL> of entity <vector_equals>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/reg_PP.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd" into library work
 Parsing entity <reg_PP>.
 Parsing architecture <RTL> of entity <reg_pp>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/counter_clrToOne.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/counter_clrToOne.vhd" into library work
 Parsing entity <counter_clrToOne>.
 Parsing architecture <RTL> of entity <counter_clrtoone>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/time_comparator.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/time_comparator.vhd" into library work
 Parsing entity <time_comparator>.
 Parsing architecture <RTL> of entity <time_comparator>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/register_file.vhd" into library work
 Parsing entity <register_file>.
 Parsing architecture <RTL> of entity <register_file>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/prescaler.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/prescaler.vhd" into library work
 Parsing entity <prescaler>.
 Parsing architecture <RTL> of entity <prescaler>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/output_reset.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/output_reset.vhd" into library work
 Parsing entity <output_reset>.
 Parsing architecture <RTL> of entity <output_reset>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/counter.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/counter.vhd" into library work
 Parsing entity <counter>.
 Parsing architecture <RTL> of entity <counter>.
-Parsing VHDL file "/home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog.vhd" into library work
+Parsing VHDL file "/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog.vhd" into library work
 Parsing entity <WatchDog>.
 Parsing architecture <RTL> of entity <watchdog>.
 
@@ -148,7 +148,8 @@ Elaborating entity <WatchDog> (architecture <RTL>) from library <work>.
 Elaborating entity <register_file> (architecture <RTL>) from library <work>.
 
 Elaborating entity <reg_PP> (architecture <RTL>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "/home/simone/OneDrive/Windowed_Watchdog_Counter/reg_PP.vhd" Line 27: clk_enable should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd" Line 25: rst should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd" Line 27: clk_enable should be on the sensitivity list of the process
 
 Elaborating entity <reg_PP> (architecture <RTL>) with generics from library <work>.
 
@@ -157,7 +158,7 @@ Elaborating entity <prescaler> (architecture <RTL>) from library <work>.
 Elaborating entity <counter_clrToOne> (architecture <RTL>) from library <work>.
 
 Elaborating entity <latch_d> (architecture <RTL>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/simone/OneDrive/Windowed_Watchdog_Counter/latch_d.vhd" Line 19: rst should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/simone/progetto reti logiche/WindowedWatchdogCounter/latch_d.vhd" Line 19: rst should be on the sensitivity list of the process
 
 Elaborating entity <counter> (architecture <RTL>) with generics from library <work>.
 
@@ -172,20 +173,20 @@ Elaborating entity <output_reset> (architecture <RTL>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <WatchDog>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog.vhd".
     Found 1-bit register for signal <started>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <WatchDog> synthesized.
 
 Synthesizing Unit <register_file>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/register_file.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/register_file.vhd".
     Summary:
 	no macro.
 Unit <register_file> synthesized.
 
 Synthesizing Unit <reg_PP_1>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/reg_PP.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd".
         dimension = 4
     Found 4-bit register for signal <register_data>.
     Summary:
@@ -193,7 +194,7 @@ Synthesizing Unit <reg_PP_1>.
 Unit <reg_PP_1> synthesized.
 
 Synthesizing Unit <reg_PP_2>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/reg_PP.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/reg_PP.vhd".
         dimension = 16
     Found 16-bit register for signal <register_data>.
     Summary:
@@ -201,43 +202,43 @@ Synthesizing Unit <reg_PP_2>.
 Unit <reg_PP_2> synthesized.
 
 Synthesizing Unit <prescaler>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/prescaler.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/prescaler.vhd".
     Found 1-bit 12-to-1 multiplexer for signal <clk_enable_s> created at line 40.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <prescaler> synthesized.
 
 Synthesizing Unit <counter_clrToOne>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/counter_clrToOne.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/counter_clrToOne.vhd".
     Summary:
 Unit <counter_clrToOne> synthesized.
 
 Synthesizing Unit <latch_d>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/latch_d.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/latch_d.vhd".
     Found 1-bit register for signal <q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <latch_d> synthesized.
 
 Synthesizing Unit <counter>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/counter.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/counter.vhd".
         dimension = 16
     Summary:
 Unit <counter> synthesized.
 
 Synthesizing Unit <time_comparator>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/time_comparator.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/time_comparator.vhd".
     Summary:
 	no macro.
 Unit <time_comparator> synthesized.
 
 Synthesizing Unit <vector_equals>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/vector_equals.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/vector_equals.vhd".
     Summary:
 Unit <vector_equals> synthesized.
 
 Synthesizing Unit <output_reset>.
-    Related source file is "/home/simone/OneDrive/Windowed_Watchdog_Counter/output_reset.vhd".
+    Related source file is "/home/simone/progetto reti logiche/WindowedWatchdogCounter/output_reset.vhd".
     Summary:
 	no macro.
 Unit <output_reset> synthesized.
@@ -397,8 +398,8 @@ Speed Grade: -3
 
    Minimum period: 4.386ns (Maximum Frequency: 227.975MHz)
    Minimum input arrival time before clock: 4.116ns
-   Maximum output required time after clock: 6.986ns
-   Maximum combinational path delay: 7.372ns
+   Maximum output required time after clock: 7.217ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -452,45 +453,25 @@ Offset:              4.116ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 39 / 2
+  Total number of paths / destination ports: 40 / 2
 -------------------------------------------------------------------------
-Offset:              6.986ns (Levels of Logic = 4)
-  Source:            main_counter/gen1[1].latch/q (FF)
+Offset:              7.217ns (Levels of Logic = 4)
+  Source:            main_counter/gen1[5].latch/q (FF)
   Destination:       nmi (PAD)
   Source Clock:      clk rising
 
-  Data Path: main_counter/gen1[1].latch/q to nmi
+  Data Path: main_counter/gen1[5].latch/q to nmi
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             17   0.447   1.372  main_counter/gen1[1].latch/q (main_counter/gen1[1].latch/q)
-     LUT6:I1->O            1   0.203   0.827  nmi3 (nmi3)
-     LUT5:I1->O            1   0.203   0.580  nmi4 (nmi4)
-     LUT4:I3->O            1   0.205   0.579  nmi8 (nmi_OBUF)
+     FDC:C->Q             13   0.447   1.277  main_counter/gen1[5].latch/q (main_counter/gen1[5].latch/q)
+     LUT6:I1->O            1   0.203   0.808  nmi2 (nmi2)
+     LUT4:I1->O            1   0.205   0.924  nmi4 (nmi4)
+     LUT6:I1->O            1   0.203   0.579  nmi8 (nmi_OBUF)
      OBUF:I->O                 2.571          nmi_OBUF (nmi)
     ----------------------------------------
-    Total                      6.986ns (3.629ns logic, 3.357ns route)
-                                       (51.9% logic, 48.1% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               7.372ns (Levels of Logic = 4)
-  Source:            rst (PAD)
-  Destination:       nmi (PAD)
-
-  Data Path: rst to nmi
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            83   1.222   1.766  rst_IBUF (rst_IBUF)
-     LUT6:I5->O            1   0.205   0.827  nmi5 (nmi5)
-     LUT4:I0->O            1   0.203   0.579  nmi8 (nmi_OBUF)
-     OBUF:I->O                 2.571          nmi_OBUF (nmi)
-    ----------------------------------------
-    Total                      7.372ns (4.201ns logic, 3.171ns route)
-                                       (57.0% logic, 43.0% route)
+    Total                      7.217ns (3.629ns logic, 3.588ns route)
+                                       (50.3% logic, 49.7% route)
 
 =========================================================================
 
@@ -508,15 +489,15 @@ clk            |    4.386|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 5.09 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.49 secs
  
 --> 
 
 
-Total memory usage is 386000 kilobytes
+Total memory usage is 385964 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

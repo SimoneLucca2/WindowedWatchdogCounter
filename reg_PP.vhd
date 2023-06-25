@@ -20,11 +20,11 @@ architecture RTL of reg_PP is
 	signal register_data : std_logic_vector(dimension-1 downto 0);
 
 	begin
-		process(clk, rst)
+		process(clk)
 		begin
 			if rst = '1' then
 				register_data <= (others => '0');
-			elsif rising_edge(clk) and clk_enable = '1' then
+			elsif clk'event and clk = '1' and clk_enable = '1' then
 				register_data <= data;
 			end if;
 		end process;

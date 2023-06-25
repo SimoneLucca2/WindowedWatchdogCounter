@@ -19,13 +19,13 @@
          <ClosedNode>/time_comparator - RTL |home|simone|OneDrive|Windowed_Watchdog_Counter|time_comparator.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>counter_inst - counter_clrToOne - RTL (/home/simone/OneDrive/Windowed_Watchdog_Counter/counter_clrToOne.vhd)</SelectedItem>
+         <SelectedItem>d0 - latch_d - RTL (/home/simone/progetto reti logiche/WindowedWatchdogCounter/latch_d.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015d0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000167000000020000000000000000000000000200000064ffffffff000000810000000300000002000001670000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>counter_inst - counter_clrToOne - RTL (/home/simone/OneDrive/Windowed_Watchdog_Counter/counter_clrToOne.vhd)</CurrentItem>
+      <CurrentItem>d0 - latch_d - RTL (/home/simone/progetto reti logiche/WindowedWatchdogCounter/latch_d.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -50,7 +50,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000039f000000040101000100000000000000000000000064ffffffff000000810000000000000004000000510000000100000000000000290000000100000000000000840000000100000000000002a10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>/home/simone/OneDrive/Windowed_Watchdog_Counter/counter.vhd</CurrentItem>
+      <CurrentItem>/home/simone/progetto reti logiche/WindowedWatchdogCounter/counter.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -91,29 +91,36 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Prescaler_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|prescaler_TB.vhd</ClosedNode>
          <ClosedNode>/Prescaler_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|prescaler_TB.vhd/uut - prescaler - RTL/counter_inst - counter_clrToOne - RTL</ClosedNode>
+         <ClosedNode>/Prescaler_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|prescaler_TB.vhd</ClosedNode>
          <ClosedNode>/WatchDog - RTL |home|simone|OneDrive|Windowed_Watchdog_Counter|watchdog.vhd</ClosedNode>
          <ClosedNode>/counter_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|counter_TB.vhd</ClosedNode>
+         <ClosedNode>/counter_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|counter_TB.vhd</ClosedNode>
          <ClosedNode>/counter_clrToOne_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|counter_clrToOne_TB.vhd</ClosedNode>
+         <ClosedNode>/counter_clrToOne_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|counter_clrToOne_TB.vhd</ClosedNode>
          <ClosedNode>/output_reset_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|output_reset_TB.vhd</ClosedNode>
+         <ClosedNode>/output_reset_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|output_reset_TB.vhd</ClosedNode>
          <ClosedNode>/prescaler - RTL |home|simone|OneDrive|Windowed_Watchdog_Counter|prescaler.vhd</ClosedNode>
          <ClosedNode>/register_file - RTL |home|simone|OneDrive|Windowed_Watchdog_Counter|register_file.vhd</ClosedNode>
          <ClosedNode>/register_file_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|register_file_TB.vhd</ClosedNode>
+         <ClosedNode>/register_file_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|register_file_TB.vhd</ClosedNode>
          <ClosedNode>/time_comparator_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|time_comparator_TB.vhd</ClosedNode>
+         <ClosedNode>/time_comparator_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|time_comparator_TB.vhd</ClosedNode>
          <ClosedNode>/watchdog_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|watchdog_TB.vhd</ClosedNode>
          <ClosedNode>/watchdog_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|watchdog_TB.vhd/uut - WatchDog - RTL/cmp - time_comparator - RTL</ClosedNode>
          <ClosedNode>/watchdog_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|watchdog_TB.vhd/uut - WatchDog - RTL/main_counter - counter - RTL</ClosedNode>
          <ClosedNode>/watchdog_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|watchdog_TB.vhd/uut - WatchDog - RTL/out_rst - output_reset - RTL</ClosedNode>
          <ClosedNode>/watchdog_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|watchdog_TB.vhd/uut - WatchDog - RTL/prsclr - prescaler - RTL</ClosedNode>
          <ClosedNode>/watchdog_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|watchdog_TB.vhd/uut - WatchDog - RTL/reg_file - register_file - RTL</ClosedNode>
+         <ClosedNode>/watchdog_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|watchdog_TB.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>WatchDog - RTL (/home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog.vhd)</SelectedItem>
+         <SelectedItem>watchdog_TB - behavior (/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000222000000020000000000000000000000000200000064ffffffff000000810000000300000002000002220000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000112000000020000000000000000000000000200000064ffffffff000000810000000300000002000001120000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>WatchDog - RTL (/home/simone/OneDrive/Windowed_Watchdog_Counter/watchdog.vhd)</CurrentItem>
+      <CurrentItem>watchdog_TB - behavior (/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -134,36 +141,43 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000181000000010000000100000000000000000000000064ffffffff000000810000000000000001000001810000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Prescaler_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|prescaler_TB.vhd</ClosedNode>
+         <ClosedNode>/Prescaler_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|prescaler_TB.vhd</ClosedNode>
          <ClosedNode>/WatchDog - Structure |home|simone|OneDrive|Windowed_Watchdog_Counter|netgen|par|WatchDog_timesim.vhd</ClosedNode>
          <ClosedNode>/counter - Structure |home|simone|OneDrive|Windowed_Watchdog_Counter|netgen|par|counter_timesim.vhd</ClosedNode>
          <ClosedNode>/counter_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|counter_TB.vhd</ClosedNode>
          <ClosedNode>/counter_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|counter_TB.vhd/uut - counter - Structure</ClosedNode>
+         <ClosedNode>/counter_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|counter_TB.vhd</ClosedNode>
          <ClosedNode>/counter_clrToOne_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|counter_clrToOne_TB.vhd</ClosedNode>
+         <ClosedNode>/counter_clrToOne_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|counter_clrToOne_TB.vhd</ClosedNode>
          <ClosedNode>/output_reset_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|output_reset_TB.vhd</ClosedNode>
+         <ClosedNode>/output_reset_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|output_reset_TB.vhd</ClosedNode>
          <ClosedNode>/register_file_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|register_file_TB.vhd</ClosedNode>
+         <ClosedNode>/register_file_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|register_file_TB.vhd</ClosedNode>
          <ClosedNode>/time_comparator_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|time_comparator_TB.vhd</ClosedNode>
+         <ClosedNode>/time_comparator_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|time_comparator_TB.vhd</ClosedNode>
          <ClosedNode>/watchdog_TB - behavior |home|simone|OneDrive|Windowed_Watchdog_Counter|watchdog_TB.vhd</ClosedNode>
+         <ClosedNode>/watchdog_TB - behavior |home|simone|progetto reti logiche|WindowedWatchdogCounter|watchdog_TB.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>WatchDog - Structure (/home/simone/OneDrive/Windowed_Watchdog_Counter/netgen/par/WatchDog_timesim.vhd)</SelectedItem>
+         <SelectedItem>watchdog_TB - behavior (/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000222000000020000000000000000000000000200000064ffffffff000000810000000300000002000002220000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000112000000020000000000000000000000000200000064ffffffff000000810000000300000002000001120000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>WatchDog - Structure (/home/simone/OneDrive/Windowed_Watchdog_Counter/netgen/par/WatchDog_timesim.vhd)</CurrentItem>
+      <CurrentItem>watchdog_TB - behavior (/home/simone/progetto reti logiche/WindowedWatchdogCounter/watchdog_TB.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -184,14 +198,14 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Post-Place &amp; Route Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000181000000010000000100000000000000000000000064ffffffff000000810000000000000001000001810000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Post-Place &amp; Route Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001300000010301000000060100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Post-Route Simulation</CurrentView>
 </Project>

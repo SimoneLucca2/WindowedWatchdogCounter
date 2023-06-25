@@ -1,0 +1,31 @@
+Command line:
+   Prescaler_TB_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/prescaler_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  54883
+
+Sun Jun 25 09:28:28 2023
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 187.204 Meg
+
+ Total Signals          : 834
+ Total Nets             : 524
+ Total Signal Drivers   : 480
+ Total Blocks           : 165
+ Total Primitive Blocks : 92
+ Total Processes        : 479
+ Total Traceable Variables  : 1149
+ Total Scalar Nets and Variables : 10105
+Total Line Count : 1351
+
+ Total Simulation Time: 48.48 sec
+
+ Current Memory Usage: 262.779 Meg
+
+Sun Jun 25 09:29:25 2023
+

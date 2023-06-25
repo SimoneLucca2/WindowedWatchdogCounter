@@ -1,0 +1,31 @@
+Command line:
+   counter_TB_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/counter_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  40599
+
+Sun Jun 25 09:27:01 2023
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 188.092 Meg
+
+ Total Signals          : 1066
+ Total Nets             : 691
+ Total Signal Drivers   : 638
+ Total Blocks           : 232
+ Total Primitive Blocks : 128
+ Total Processes        : 636
+ Total Traceable Variables  : 1557
+ Total Scalar Nets and Variables : 11394
+Total Line Count : 2016
+
+ Total Simulation Time: 0.06 sec
+
+ Current Memory Usage: 263.668 Meg
+
+Sun Jun 25 09:28:19 2023
+

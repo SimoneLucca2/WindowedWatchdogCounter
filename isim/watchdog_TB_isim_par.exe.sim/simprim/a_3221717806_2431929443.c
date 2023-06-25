@@ -423,10 +423,10 @@ extern void simprim_a_3221717806_2431929443_0311666291_init()
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_3221717806_2431929443_2599983608_init()
+extern void simprim_a_3221717806_2431929443_0574946973_init()
 {
 	static char *pe[] = {(void *)simprim_a_3221717806_2431929443_p_0,(void *)simprim_a_3221717806_2431929443_p_1};
-	xsi_register_didat("simprim_a_3221717806_2431929443_2599983608", "isim/watchdog_TB_isim_par.exe.sim/simprim/a_3221717806_2431929443_2599983608.didat");
+	xsi_register_didat("simprim_a_3221717806_2431929443_0574946973", "isim/watchdog_TB_isim_par.exe.sim/simprim/a_3221717806_2431929443_0574946973.didat");
 	xsi_register_executes(pe);
 }
 
@@ -472,10 +472,10 @@ extern void simprim_a_3221717806_2431929443_0596022442_init()
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_3221717806_2431929443_0574946973_init()
+extern void simprim_a_3221717806_2431929443_0743943973_init()
 {
 	static char *pe[] = {(void *)simprim_a_3221717806_2431929443_p_0,(void *)simprim_a_3221717806_2431929443_p_1};
-	xsi_register_didat("simprim_a_3221717806_2431929443_0574946973", "isim/watchdog_TB_isim_par.exe.sim/simprim/a_3221717806_2431929443_0574946973.didat");
+	xsi_register_didat("simprim_a_3221717806_2431929443_0743943973", "isim/watchdog_TB_isim_par.exe.sim/simprim/a_3221717806_2431929443_0743943973.didat");
 	xsi_register_executes(pe);
 }
 
@@ -507,10 +507,10 @@ extern void simprim_a_3221717806_2431929443_2365726867_init()
 	xsi_register_executes(pe);
 }
 
-extern void simprim_a_3221717806_2431929443_2604331983_init()
+extern void simprim_a_3221717806_2431929443_1054998731_init()
 {
 	static char *pe[] = {(void *)simprim_a_3221717806_2431929443_p_0,(void *)simprim_a_3221717806_2431929443_p_1};
-	xsi_register_didat("simprim_a_3221717806_2431929443_2604331983", "isim/watchdog_TB_isim_par.exe.sim/simprim/a_3221717806_2431929443_2604331983.didat");
+	xsi_register_didat("simprim_a_3221717806_2431929443_1054998731", "isim/watchdog_TB_isim_par.exe.sim/simprim/a_3221717806_2431929443_1054998731.didat");
 	xsi_register_executes(pe);
 }
 
